@@ -4,7 +4,7 @@
 
 Geliştirdiğim bu NLP modeli; RAG için hazırlanan hem İngilizce hem Türkçe dokümanların chunking problemini dokümanı anlamsal bölümlere ayırarak çözen, böylece RAG’dan maximum verim alınmasını sağlayan bir NLP modelidir. Model, cümle bazında konunun değiştiği yeri tespit edebiliyor. Ayrıca RAG işlemine doğrudan girebilecek şekilde embedding uygulanmış JSON formatında çıktı alıyorsunuz.
 
-Mimarisi; mE5-small base encoderin üzerine kendi kurduğum özel bir Cross-Sentence Attention mekanizmalı Transformer bloğundan oluşuyor.
+Mimarisi; mE5-small base encoderin üzerine kendi kurduğum özel bir Cross-Sentence Attention mekanizmalı Transformer bloğundan oluşuyor. Bu sayede klasik bir bi-LSTM yapısına göre çok daha esnek şekilde dokümanı tarayabiliyor, ayrıca max_sents=20 değeri ile Transformerin ilgilendiği kısım sınırlandırılıyor ve bu pencerede anlam kopukluğu aranıyor. Bu hem birden fazla boundary bulmak için yeterli bir pencere büyüklüğü sağlıyor, hem de Transformer mimarisinin ciddi dezavantajı olan O(N²) şeklindeki çılgın time complexity derdine de deva oluyor.
 
 ![Architecture](SeamFlowchart.png)
 ---
