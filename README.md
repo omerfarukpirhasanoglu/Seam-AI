@@ -1,4 +1,4 @@
-# Seam AI (pytorch tabanlı NLP projem)
+# Seam AI (pytorch tabanlı NLP projem) [Modeli Deneyin](https://pirhasanoglu.com)
 
 **RAG pipeline'ları için anlamsal metin bölümleme modeli.**
 
