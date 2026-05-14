@@ -76,23 +76,6 @@ Boundary oranı: **%8.87** 5 paragraflık gruplama ile organik section geçişle
 
 ---
 
-## Kurulum
-
-```bash
-git clone https://github.com/omerfarukpirhasanoglu/Seam AI
-
-pip install -r requirements.txt
-```
-
-ONNX formatında export edilmiş modelin checkpoints klasöründe olmasına dikkat edin.
-```
-checkpoints/
-├── smart_chunker.onnx
-└── smart_chunker.onnx.data
-```
-
----
-
 ## Teknolojiler
 
 `PyTorch` `HuggingFace Transformers` `ONNX Runtime` `Python` `mE5-small`
