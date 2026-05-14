@@ -6,7 +6,8 @@ Geliştirdiğim bu NLP modeli; RAG için hazırlanan hem İngilizce hem Türkçe
 
 Mimarisi; mE5-small base encoderin üzerine kendi kurduğum özel bir Cross-Sentence Attention mekanizmalı Transformer bloğundan oluşuyor. Bu sayede klasik bir bi-LSTM yapısına göre çok daha esnek şekilde dokümanı tarayabiliyor, ayrıca max_sents=20 değeri ile Transformerin ilgilendiği kısım sınırlandırılıyor ve bu pencerede anlam kopukluğu aranıyor. Bu hem birden fazla boundary bulmak için yeterli bir pencere büyüklüğü sağlıyor, hem de Transformer mimarisinin ciddi dezavantajı olan O(N²) şeklindeki çılgın time complexity derdine de deva oluyor.
 
-[Modeli denemek için tıklayın](https://pirhasanoglu.com)
+Modeli denemek için tıklayın: [pirhasanoglu.com](https://pirhasanoglu.com)
+
 ![Architecture](SeamFlowchart.png)
 ---
 
