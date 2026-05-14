@@ -95,4 +95,4 @@ checkpoints/
 
 ## Teknolojiler
 
-`PyTorch` `HuggingFace Transformers` `ONNX Runtime` `FastAPI` `Docker`
+`PyTorch` `HuggingFace Transformers` `ONNX Runtime` `Python` `mE5-small`
